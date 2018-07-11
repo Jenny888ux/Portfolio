@@ -1,4 +1,4 @@
-#P-U-Z-Z-L-E
+#PUZZLE
 ##User Manual
 ### Blake Capella 12/6/16
 
