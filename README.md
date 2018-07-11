@@ -1,7 +1,7 @@
 # Portfolio
 ## Blake Capella
 
-Collection of projects I have worked on over the course of the past few years. Each folder/project contains its own document to describe its purpose. A breif description is below:
+Collection of projects I have worked on over the course of the past few years. Each folder/project contains its own readme for further information. A breif description is below:
 
 1. **_Carnegie Mellon University: Human Computer Interaction Institute -- Research Experience for Undergraduates_** (CMU_HCII_REU)
    - **Exercise Classifier** 
