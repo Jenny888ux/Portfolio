@@ -1,5 +1,7 @@
 import java.awt.Color;
 
+// EQUIVLIANT to Planets in Proj 1
+
 public class Body {
     private double rx, ry;       // position
     private double vx, vy;       // velocity
@@ -16,6 +18,27 @@ public class Body {
         this.mass  = mass;
         this.color = color;
     }
+	
+	public boolean in(Quad q) // returns true if body is in quad
+	{
+		if(q.contains(rx,ry))
+		{
+			return true;
+		}
+		
+		else
+		{
+			return false;
+		}
+		
+	}
+	
+	public Body plus(Body b)
+	{
+		double xi = (this.rx*this.mass)+(b.rx*b.mass)/(b.mass+this.mass);
+		double yi = (this.ry*this.mass)+(b.ry*b.mass)/(b.mass+this.mass);
+		return new Body(xi,yi,0,0,(this.mass+b.mass), this.color);//return a new body with the com of THIS and b
+	}
 
     // update the velocity and position of the invoking Body
     // uses leapfrom method, as in Assignment 2
@@ -61,6 +84,7 @@ public class Body {
 
     // convert to string representation formatted nicely
     public String toString() {
+		this.draw();
         return String.format("%10.3E %10.3E %10.3E %10.3E %10.3E", rx, ry, vx, vy, mass);
     }
 

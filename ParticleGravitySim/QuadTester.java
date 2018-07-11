@@ -50,16 +50,26 @@ public class QuadTester {
         Quad ne = universe.NE();
         Quad sw = universe.SW();
         Quad se = universe.SE();
+		Quad nwnw = nw.NW();
+		Quad nwne = nw.NE();
+		Quad nwsw = nw.SW();
+		Quad nwse = nw.SE();
         System.out.println("      NW quadrant: " + nw);
         System.out.println("      NE quadrant: " + ne);
         System.out.println("      SW quadrant: " + sw);
         System.out.println("      SE quadrant: " + se);
+		System.out.println("      NW->NW quadrant: " + nwnw);
+        System.out.println("      NW->NE quadrant: " + nwne);
+        System.out.println("      NW->SW quadrant: " + nwsw);
+        System.out.println("      NW->SE quadrant: " + nwse);
 
         // test Quad.draw
+		StdDraw.setPenColor(StdDraw.CYAN);
         nw.draw();
         ne.draw();
         sw.draw();
         se.draw();
+		StdDraw.setPenColor(StdDraw.GREEN);
         nw.NW().draw();
         nw.NE().draw();
         nw.SE().draw();
