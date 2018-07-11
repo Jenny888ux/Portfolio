@@ -1,5 +1,7 @@
 #PUZZLE
+
 ##User Manual
+
 ### Blake Capella 12/6/16
 
 This program is a short text-based adventure built primarily on puzzles.  The main premise of the program follows the model of an escape room. The main objective of the game is to escape the room you have woken up in by collecting numerous objects scattered around the room. You then use these objects or hints to unlock a key or other hints. Eventually, you will collect the final key and escape the room.
